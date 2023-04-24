@@ -2,6 +2,13 @@
 <html>
     <head>
         <title> Contact US </title>
+
+        <!-- css -->
+        <style>
+           label, button{
+            font-weight: bold;
+           }
+        </style>
     </head>
     <body>
         <h2> Contact Us </h2>
@@ -9,29 +16,29 @@
         <table>
             <tbody>
                 <tr> 
-                    <td> <label for="fullname">  <strong> Full Name: </strong> </label> </td>
+                    <td> <label for="fullname"> Full Name: </label> </td>
                     <td> <input type="text" id="fullname" placeholder="max chracter length = 40" maxlength="40"> </td>
                 </tr>
 
                 <tr>
-                    <td> <label for="mobile"> <strong> Mobile No: </strong> </label> </td>
+                    <td> <label for="mobile"> Mobile No: </label> </td>
                     <td> <input type="number" id="mobile"> </td>
                 </tr>
                     
                 <tr>
-                    <td> <label for="mail"> <strong> Email: </strong> </label> </td>
+                    <td> <label for="mail"> Email: </label> </td>
                     <td> <input type="email" id="mail" placeholder="Ex.abc@gmail.com" required> </td>
                 </tr>
 
                 <tr> 
-                    <td> <label> <strong> Enquiry: </strong> </label></td>
+                    <td> <label> Enquiry: </label></td>
                     <td> <textarea rows="7" cols="50"> </textarea> </td>
                 </tr>
 
                 <!-- Reset and Submit button  -->
                 <tr>   
-                    <td> <button type="submit"> <strong> Submit </strong> </button> </td>
-                    <td> <button type="reset"> <strong> Clear </strong> </button> </td>            
+                    <td> <button type="submit"> Submit </button> </td>
+                    <td> <button type="reset"> Clear </button> </td>            
                 </tr>
             </tbody>
         </table>
