@@ -3,11 +3,43 @@
     <head>
         <title> Contact US </title>
 
+        <!-- Google font family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
         <!-- css -->
         <style>
+            *{
+                font-family: 'Roboto Slab', serif;
+                color:cadetblue;  
+            }
+
            label, button{
-            font-weight: bold;
+                font-weight: bold;    
            }
+           input{
+                width: 400px;
+                height: 25px;
+                border-radius: 10px;
+                border: 1px solid #03857b;
+                
+            }
+            input[type=text]{
+                text-transform: capitalize;
+            }
+            button:hover{
+               background-color:lavender;
+            }
+            textarea,button{
+                border: 1px solid #03857b;
+                border-radius: 10px;
+            }
+            button{
+                width: 62px;
+                height: 30px;
+                margin-top: 12px;     
+            }
         </style>
     </head>
     <body>
@@ -22,7 +54,7 @@
 
                 <tr>
                     <td> <label for="mobile"> Mobile No: </label> </td>
-                    <td> <input type="number" id="mobile"> </td>
+                    <td> <input type="tel" id="mobile"> </td>
                 </tr>
                     
                 <tr>
@@ -32,12 +64,12 @@
 
                 <tr> 
                     <td> <label> Enquiry: </label></td>
-                    <td> <textarea rows="7" cols="50"> </textarea> </td>
+                    <td> <textarea rows="7" cols="48"> </textarea> </td>
                 </tr>
 
                 <!-- Reset and Submit button  -->
                 <tr>   
-                    <td> <button type="submit"> Submit </button> </td>
+                    <td> <button type="submit" id="submit"> Submit </button> </td>
                     <td> <button type="reset"> Clear </button> </td>            
                 </tr>
             </tbody>
